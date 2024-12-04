@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-image: linear-gradient(to right, rgb(80, 249, 209), rgb(255, 225, 159), rgb(254, 163, 163)); */
+}
+
+header .left {
+    flex-basis: 60vw;
+    align-items: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 7%;
+    padding-left: 10%;
+}
+
+header .left p{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 8%;
+}
+
+
+header .left h1, h2 {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+header .left h1{
+    font-size: 70px;
+}
+
+header .left h2{
+    font-size: 50px;
+}
+
+header .right img{
+    height: 95vh;
+    width: auto;
+    margin-top: -8vh;
+    margin-right: 5vw;
+}
+
+header .left button{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    box-shadow: none;
+    border: 1px solid black;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header .left button:hover{
+    cursor: pointer;
+}
