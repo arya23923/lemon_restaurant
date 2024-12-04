@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav .left img{
+    height: 13vh;
+    width: auto;
+    margin-top: 3vh;
+}
+
+nav .left{
+    flex-basis: 20vw;
+    align-self: center;
+    justify-self: center;
+}
+
+nav .right{
+    flex-basis: 65vw;
+    margin-top: 8vh;
+    justify-self: flex-end;
+    margin-right: -5vw;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav  .right a{
+    text-decoration: none;
+    color: black;
+    /* text-align: center; */
+    padding: 5%;
+    padding-right: -4%;
+    font-size: 24px;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
