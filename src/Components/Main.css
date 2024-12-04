@@ -1,0 +1,88 @@
+main .cards .card img{
+    height: 25vh;
+    width: auto;
+}
+
+main .cards .card .delivery img{
+    height: 5vh;
+    width: auto;
+    cursor: pointer;
+}
+
+main .cards .card .price, .delivery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main .cards .card .price p{
+    padding-left: 5%;
+}
+
+
+
+main .cards .card{
+    padding: 2%;
+    background-color: #D9D9D9;
+    justify-content: space-around;
+    flex-basis: 10vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 1px solid #D9D9D9;
+    border-radius: 16px;
+}
+
+main .cards{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-around;
+}
+
+main .cards .card p{
+    padding: 5%;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+}
+
+main .top h1{
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding-left: 3%;
+    font-size: 60px;
+    padding-bottom: 3%;
+    flex-basis: 60vw;
+    justify-self: flex-start
+}
+
+main .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+main .top button{
+    margin: 30px;
+    color: white;
+    background-color: black;
+    flex-basis: 10vw;
+    justify-self: flex-end;
+    border: 1px solid black;
+    box-shadow: none;
+    border-radius: 16px;
+    font-size: 23px;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+main .top button:hover{
+    cursor: pointer;
+}
