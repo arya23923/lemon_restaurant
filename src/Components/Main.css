@@ -1,5 +1,5 @@
 main .cards .card img{
-    height: 25vh;
+    height: 22vh;
     width: auto;
 }
 
@@ -7,6 +7,7 @@ main .cards .card .delivery img{
     height: 5vh;
     width: auto;
     cursor: pointer;
+    margin: 2%;
 }
 
 main .cards .card .price, .delivery{
@@ -19,17 +20,28 @@ main .cards .card .price p{
     padding-left: 5%;
 }
 
-
+main .cards .card .delivery p{
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+}
 
 main .cards .card{
     padding: 2%;
-    background-color: #D9D9D9;
+    background-color: #f9dbdb;
     justify-content: space-around;
-    flex-basis: 10vw;
+    flex-basis: 25vw;
     padding-top: 1%;
     padding-bottom: 1%;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #f9dbdb;
     border-radius: 16px;
+    box-shadow: 0px 9px rgb(164, 164, 164);
+}
+
+main .cards .card:hover{
+    transform: translateY(-2vh);
 }
 
 main .cards{
@@ -46,6 +58,7 @@ main .cards .card p{
     font-optical-sizing: auto;
     font-weight: medium;
     font-style: normal;
+    font-size: 15px;
 }
 
 main .top h1{
@@ -85,4 +98,44 @@ main .top button{
 
 main .top button:hover{
     cursor: pointer;
+}
+
+main .cards .card .price h2{
+    font-size: 30px;
+    padding: 2%;
+}
+
+.testimonial h1{
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding: 3%;
+    padding-left: 9%;
+    font-size: 60px;
+    padding-bottom: 3%;
+    flex-basis: 60vw;
+    justify-self: flex-start
+}
+
+.testimonial .cards .card{
+    flex-basis: 20vw;
+    padding: 2%;
+}
+
+.testimonial .cards .card img{
+    width: 16vw;
+    height: auto;
+}
+
+.testimonial .cards .card .star{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.testimonial .cards .card .star p{
+    margin: 0;
+    font-size: 20px;
+    padding: 0;
 }
