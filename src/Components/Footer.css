@@ -1,0 +1,51 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+footer img{
+    width: 15vw;
+    height: fit-content;
+    margin-top: -2vh;
+}
+
+footer .service, .company, .address{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20vw;
+}
+
+footer .service , .company , .address,  h1{
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+}
+
+footer h1{
+    font-weight: bold;
+}
+
+footer .address p{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: regular;
+    font-style: regular;
+    font-size: 20px;
+    padding: 2%;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: regular;
+    font-style: regular;
+    font-size: 20px;
+}
+

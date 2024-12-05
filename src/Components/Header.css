@@ -49,6 +49,7 @@ header .right img{
     width: auto;
     margin-top: -8vh;
     margin-right: 5vw;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 header .left button{

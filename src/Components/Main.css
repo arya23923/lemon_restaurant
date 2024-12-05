@@ -159,6 +159,7 @@ main .about .right img{
     height: auto;
     margin-top: -5vh;
     padding-left: 2%;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 main .about .left h1{
