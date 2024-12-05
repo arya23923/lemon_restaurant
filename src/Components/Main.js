@@ -7,7 +7,8 @@ import scooty from '../images/motorcycle.png';
 import mel from '../images/test1.jpg';
 import jayce from '../images/test2.jpg';
 import caitlyn from '../images/test3.jpg';
-import violet from '../images/test4.jpg'
+import violet from '../images/test4.jpg';
+import foodbowl from '../images/vecteezy_ai-generated-pork-teriyaki-japanese-food-on-a-transparent_36512714.png'
 
 function Main () {
     return(
@@ -98,6 +99,15 @@ function Main () {
                             <p>⭐</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className="about">
+                <div className="left">
+                    <h1>Little Lemon</h1>
+                    <p>Little Lemon is an establishment that was founded in 1967 by Mario and Antonio Schimmenti. They wished to establish a restaurant that their late father wished for and spread happiness by their shared interest of food. </p>
+                </div>
+                <div className="right">
+                    <img src={foodbowl} alt="food bowl" />
                 </div>
             </div>
         </main>

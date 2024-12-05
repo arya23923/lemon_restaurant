@@ -110,7 +110,7 @@ main .cards .card .price h2{
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    padding: 3%;
+    padding: 10%;
     padding-left: 9%;
     font-size: 60px;
     padding-bottom: 3%;
@@ -121,6 +121,10 @@ main .cards .card .price h2{
 .testimonial .cards .card{
     flex-basis: 20vw;
     padding: 2%;
+}
+
+.testimonial .cards .card:hover{
+    transform: translateY(0);
 }
 
 .testimonial .cards .card img{
@@ -138,4 +142,42 @@ main .cards .card .price h2{
     margin: 0;
     font-size: 20px;
     padding: 0;
+}
+
+main .about{
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid rgb(94, 94, 94);
+    margin-bottom: 1vh;
+}
+
+main .about .right img{
+    width: 35vw;
+    height: auto;
+    margin-top: -5vh;
+    padding-left: 2%;
+}
+
+main .about .left h1{
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 75px;
+    align-self: center;
+    padding: 5%;
+}
+
+main .about .left p{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+    font-size: 25px;
+    padding: 5%;
+    padding-top: 8%;
+    padding-right: 5%;
 }
