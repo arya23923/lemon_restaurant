@@ -41,7 +41,8 @@ main .cards .card{
 }
 
 main .cards .card:hover{
-    transform: translateY(-2vh);
+    scale: 1.1;
+    transition-duration: 500ms;
 }
 
 main .cards{
@@ -125,6 +126,7 @@ main .cards .card .price h2{
 
 .testimonial .cards .card:hover{
     transform: translateY(0);
+    scale: 1;
 }
 
 .testimonial .cards .card img{
@@ -181,4 +183,130 @@ main .about .left p{
     padding: 5%;
     padding-top: 8%;
     padding-right: 5%;
+}
+
+@media screen and (max-width: 450px){
+    main .top h1{
+        font-size: 25px;
+        margin-left: 7vw;
+    }
+    main .top button{
+        font-size: 9px;
+        align-items: center;
+        border-radius: 6px;
+        margin-top: 0.5vh;
+        min-width: fit-content;
+        padding: 1%;
+    }
+    main .cards .card img{
+        width: 30vw;
+        height: auto;
+    }
+    main .cards{
+        overflow: scroll;
+    }
+    main .cards .card{
+        padding: 2%;
+        margin: 4vw;
+        padding-bottom: 0%;
+    }
+    main .cards .card:hover{
+        scale: 1.25;
+        transition-duration: 300ms;
+    }
+    main .cards .card .price h2{
+        font-size: 15px;
+    }
+    main .cards .card .price p{
+        font-size: 10px;
+    }
+    main .cards .card p{
+        font-size: 10px;
+    }
+    main .cards .card .delivery{
+        align-self: flex-end;
+    }
+    main .cards .card .delivery p{
+        font-size: 12px
+    }
+    main .cards .card .delivery img{
+        width: 5vw;
+        height: auto;
+    }
+    main .testimonial h1{
+        font-size: 25px;
+        margin-left: 2vw;
+    }
+    main .about .left h1{
+        font-size: 30px;
+    }
+    main .about .left p{
+        font-size: 10px;
+    }
+    main .about .right img{
+        width: 35vw;
+        margin-top: 1vh;
+        margin-bottom: 3vh;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 450px){
+    main .top h1{
+        font-size: 45px;
+    }
+    main .top button{
+        font-size: 15px;
+        margin-top: 1vh;
+        border-radius: 6px;
+    }
+    main .cards{
+        overflow: scroll;
+        justify-content: space-around;
+        width: 110vw;
+    }
+    main .cards::-webkit-scrollbar{
+        display: none;
+    }
+    main .cards .card{
+        box-shadow: 0px 5px rgb(207, 207, 207);
+        padding-bottom: 0%;
+        margin-bottom: 2%;
+        padding-left: 0%;
+    }
+    main .cards .card img{
+        width: 30vw;
+        height: auto;
+    }
+    main .cards .card .price + .delivery h2{
+        font-size: 20px;
+        padding: 3%;
+    }
+    main .cards .card .delivery img{
+        width: 3vw;
+        height: fit-content;
+        margin-top: 1vh;
+    }
+    main .testimonial h1{
+        font-size: 45px;
+        margin-top: 5vh;
+        padding-top: 0%;
+    }
+    main .about .left h1{
+        font-size: 45px;
+    }
+    main .about .left p{
+        font-size: 20px;
+        padding-bottom: 5%;
+    }
+    main .about{
+        padding: 5%;
+        padding-bottom: 8%;
+    }
+    main .right img{
+        width: 30vw;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        margin-bottom: -10vh;
+    }
 }

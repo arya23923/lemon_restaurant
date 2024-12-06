@@ -9,7 +9,7 @@ function Header() {
                 <div className="left">
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
-                    <p>One of Chicago’s finest and oldest restaurant serving scrumptious and appetizing meals to it’s customers since 1967. Hope you enjoy our service and leave us a good rating! </p>
+                    <p>One of Chicago’s finest restaurant serving scrumptious and appetizing meals. We are a family owned Mediterranean restaurant, focused on traditional recipes with a modern twist. Hope you enjoy our service and leave us a good rating! </p>
                     <button>Reserve Table</button>
                 </div>
                 <div className="right">

@@ -44,3 +44,40 @@ nav  .right a{
     font-weight: bold;
     font-style: normal;
 }
+
+@media screen and (max-width: 450px){
+    nav{
+        width: 150vw;
+        margin-right: 0;
+    }
+    nav .right{
+        flex-basis: 90vw;
+        margin-top: 5vh;
+    }
+    nav .right a{
+        font-size: 10px;
+    }
+    nav .left{
+        flex-basis: 10vw;
+    }
+    nav .left img{
+        width: 40vw;
+        height: auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 450px){
+    nav .left img{
+        width: 25vw;
+        height: auto;
+        padding-right: 0%;
+        padding-left: 5%;
+    }
+    nav .right{
+        flex-basis: 80vw;
+        padding-right: 0%;
+        margin-top: 5vh;
+        padding-left: 3%;
+    }
+}

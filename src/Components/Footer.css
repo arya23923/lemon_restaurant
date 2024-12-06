@@ -49,3 +49,32 @@ footer a{
     font-size: 20px;
 }
 
+@media screen and (max-width: 450px){
+    footer h1{
+        font-size: 15px;
+        padding: 3%;
+    }
+    footer img{
+        padding-top: 5%;
+        padding-right: 5%;
+    }
+    footer .service a{
+        font-size: 10px;
+        padding: 5%;
+    }
+    footer .company a{
+        font-size: 10px;
+        padding: 5%;
+    }
+    footer .address p{
+        font-size: 10px;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 450px){
+    footer img{
+        padding-top: 3%;
+    }
+}
+
