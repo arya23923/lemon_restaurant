@@ -1,8 +1,14 @@
 import React from "react";
 import header_img from '../images/top-view-salad-with-couscous-veggies.png'
 import './Header.css'
+import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
+    let navigate = useNavigate();
+    const routeChange = () => {
+        let path = `./BookingForm.js`;
+        navigate(path);
+    }
     return(
         <>
             <header>
@@ -10,7 +16,7 @@ function Header() {
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
                     <p>One of Chicago’s finest restaurant serving scrumptious and appetizing meals. We are a family owned Mediterranean restaurant, focused on traditional recipes with a modern twist. Hope you enjoy our service and leave us a good rating! </p>
-                    <button>Reserve Table</button>
+                    <button onClick={routeChange}>Reserve Table</button>
                 </div>
                 <div className="right">
                     <img src={header_img} />
