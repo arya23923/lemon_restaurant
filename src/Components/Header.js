@@ -1,12 +1,12 @@
 import React from "react";
 import header_img from '../images/top-view-salad-with-couscous-veggies.png'
 import './Header.css'
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
     let navigate = useNavigate();
     const routeChange = () => {
-        let path = `./BookingForm.js`;
+        let path = `./booking`;
         navigate(path);
     }
     return(
@@ -19,7 +19,7 @@ function Header() {
                     <button onClick={routeChange}>Reserve Table</button>
                 </div>
                 <div className="right">
-                    <img src={header_img} />
+                    <img src={header_img} alt="header"/>
                 </div>
             </header>
         </>

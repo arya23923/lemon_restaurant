@@ -9,8 +9,19 @@ import jayce from '../images/test2.jpg';
 import caitlyn from '../images/test3.jpg';
 import violet from '../images/test4.jpg';
 import foodbowl from '../images/vecteezy_ai-generated-pork-teriyaki-japanese-food-on-a-transparent_36512714.png'
+// import Booking from "./BookingForm";
+// import { useState } from "react";
 
 function Main () {
+    // const initialTimes = [
+    //     "17:00 PM",
+    //     "18:00 PM",
+    //     "19:00 PM",
+    //     "20:00 PM",
+    //     "21:00 PM",
+    //     "22:00 PM"
+    // ];
+    // const [availableTimes, setAvailableTimes] = useState([...initialTimes]);
     return(
         <main>
             <div className="top">
@@ -110,6 +121,9 @@ function Main () {
                     <img src={foodbowl} alt="food bowl" />
                 </div>
             </div>
+            {/* <div>
+                <Booking availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />
+            </div> */}
         </main>
     )
 };

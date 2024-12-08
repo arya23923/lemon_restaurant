@@ -1,0 +1,107 @@
+.form-reservation{
+    background-image: url("../images/reservation.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-size: cover;
+    background-position: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 50vw;
+    height: 90vh;
+    margin-left: 27vw;
+    position: absolute;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+form label{
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    padding: 3%;
+    color: white;
+}
+
+form input{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding: 3%;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 8px;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+}
+
+form input::placeholder{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+form select{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding: 3%;
+    border: 1px solid rgb(251, 251, 251);
+    border-radius: 8px;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+}
+
+form button{
+    padding: 3%;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 16px;
+    font-size: 15px;
+}
+
+form button:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition-duration: 300ms;
+}
+
+form .spanning{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 450px){
+    form{
+        width: 70vw;
+        padding: 5%;
+        margin-left: 17vw;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    form label{
+        font-size: 20px;
+    }
+    form .spanning{
+        width: 50vw;
+    }
+    form input{
+        width: 30vw;
+    }
+}
