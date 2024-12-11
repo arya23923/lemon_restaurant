@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import BookingForm from "./BookingForm";
+import {fetchAPI} from "../fakeAPI"
 
 const initialTimes = [
     "17:00 PM",
@@ -11,14 +12,15 @@ const initialTimes = [
 ];
 
 
-export const updateTimes = (state, action) => {
-    switch (action.type) {
-        case "UPDATE":
+const updateTimes = (date) => {
+    return async (dispatch) => {
+        const availableTimes = fetchAPI(date);
 
-            return initialTimes;
-        default:
-            return state;
-    }
+        dispatch({
+            type: 'UPDATE_TIMES',
+            payload: availableTimes
+        });
+    };
 };
 
 const BookingPage = () => {
@@ -28,7 +30,7 @@ const BookingPage = () => {
     return (
         <>
             <BookingForm
-                availableTimes={availableTimes}
+                availableTimes={initialTimes}
                 dispatchAvailableTimes={dispatch}
             />
         </>

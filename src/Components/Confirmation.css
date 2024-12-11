@@ -1,0 +1,25 @@
+.confirmation .confirmation-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    padding-bottom: 15%;
+    flex-direction: column;
+}
+
+.confirmation .confirmation-content h1{
+    padding: 2%;
+}
+
+.confirmation .confirmation-content h2{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.confirmation .confirmation-content img{
+    width: 5vw;
+    /* padding-top: 5%; */
+}

@@ -152,7 +152,7 @@ main .about{
     padding: 5%;
     padding-top: 10%;
     padding-bottom: 2%;
-    border-bottom: 2px solid rgb(94, 94, 94);
+    /* border-bottom: 2px solid rgb(94, 94, 94); */
     margin-bottom: 1vh;
 }
 

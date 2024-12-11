@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import './BookingForm.css';
+import { submitAPI } from "../fakeAPI"
+import { useNavigate } from "react-router-dom";
 
 const BookingForm = ({ availableTimes, dispatchAvailableTimes }) => {
     const [startDate, setStartDate] = useState(new Date());
     const [people, setPeople] = useState(1);
     const [occasion, setOccasion] = useState("");
+    const [time, setTime] = useState("17:00");
 
     const handleDateChange = (date) => {
         setStartDate(date);
@@ -14,9 +17,26 @@ const BookingForm = ({ availableTimes, dispatchAvailableTimes }) => {
         dispatchAvailableTimes({ type: "UPDATE", date });
     };
 
+    let navigate = useNavigate();
+
+    const handleFormSubmit = e => {
+        e.preventDefault();
+        let formData = {
+            date: String,
+            time: String,
+            people: Number,
+            occasion: String
+        }
+        const response = submitAPI(formData);
+        if(response){
+            console.log(response);
+            navigate(`/confirmation`);
+        }
+    }
+
     return (
         <div className="form-reservation">
-            <form>
+            <form onSubmit={handleFormSubmit}>
                 <h1>Book reservation</h1>
                 <div className="spanning">
                     <label htmlFor="date">Pick a date: </label>
@@ -32,7 +52,7 @@ const BookingForm = ({ availableTimes, dispatchAvailableTimes }) => {
                     <label htmlFor="time">Select Time: </label>
                     <select id="res-time">
                         {availableTimes.map((time, index) => (
-                            <option key={index} value={time}>
+                            <option key={index} value={time} onChange={(e) => setTime(e.target.value)}>
                                 {time}
                             </option>
                         ))}

@@ -9,6 +9,7 @@ import BookingForm from './Components/BookingForm';
 import BookingPage from './Components/BookingPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Construction from './Components/UnderConstruction';
+import Confirmation from './Components/Confirmation';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/booking' element={<BookingForm />}></Route>
           <Route path='/bookingPage' element={<BookingPage />}></Route>
           <Route path='/construction' element={<Construction />}></Route>
+          <Route path='/confirmation' element={<Confirmation />}></Route>
         </Routes>
       </BrowserRouter>
     </>

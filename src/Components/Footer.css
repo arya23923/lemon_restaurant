@@ -3,13 +3,13 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     padding: 5%;
-    /* background-color: rgb(238, 153, 114); */
+    background-color: rgb(73, 94, 87);
+    color: white;
 }
 
 footer img{
-    width: 15vw;
+    width: 7vw;
     height: fit-content;
-    margin-top: -2vh;
 }
 
 footer .service, .company, .address{
@@ -48,6 +48,7 @@ footer a{
     font-weight: regular;
     font-style: regular;
     font-size: 20px;
+    color: white;
 }
 
 @media screen and (max-width: 450px){
