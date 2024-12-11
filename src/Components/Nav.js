@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../images/logo.png'
 import './Nav.css'
+import { Link } from "react-router-dom";
 
 function Navbar () {
     return(
@@ -10,12 +11,12 @@ function Navbar () {
                 <img src={logo} alt="logo" />
             </div>
             <div className="right">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Menu</a>
-                <a href="#">Reservation</a>
-                <a href="#">Order online</a>
-                <a href="#">Login</a>
+                <Link to="/">Home</Link>
+                <Link to="/Construction">About</Link>
+                <Link to="/Construction">Menu</Link>
+                <Link to="/bookingPage">Reservation</Link>
+                <Link to="/Construction">Order online</Link>
+                <Link to="/Construction">Login</Link>
             </div>
           </nav>
         </>

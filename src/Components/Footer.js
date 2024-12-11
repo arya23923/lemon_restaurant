@@ -1,6 +1,7 @@
 import React from "react";
 import './Footer.css'
 import logo from '../images/logo.png'
+import { Link } from "react-router-dom";
 
 function Footer () {
     return(
@@ -8,16 +9,16 @@ function Footer () {
             <img src={logo} alt="logo" />
             <div className="service">
                 <h1>Our services</h1>
-                <a href="#">Pricing</a>
-                <a href="#">Tracking</a>
-                <a href="#">Report a bug</a>
-                <a href="#">Terms of services</a>
+                <Link to="/Construction">Pricing</Link>
+                <Link to="/Construction">Tracking</Link>
+                <Link to="/Construction">Report a bug</Link>
+                <Link to="/Construction">Terms of services</Link>
             </div>
             <div className="company">
                 <h1>Our company</h1>
-                <a href="#">Reporting</a>
-                <a href="#">Getting in touch</a>
-                <a href="#">Management</a>
+                <Link to="/Construction">Reporting</Link>
+                <Link to="/Construction">Getting in touch</Link>
+                <Link to="/Construction">Management</Link>
             </div>
             <div className="address">
                 <h1>Address</h1>

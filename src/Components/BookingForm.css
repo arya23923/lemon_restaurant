@@ -17,7 +17,7 @@ form{
     align-content: center;
     background-color: transparent;
     border: 2px solid rgb(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(70px);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     padding: 2%;
     padding-left: 0%;

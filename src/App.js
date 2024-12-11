@@ -5,8 +5,10 @@ import Header from './Components/Header';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
 import Homepage from './Components/Homepage';
-import Booking from './Components/BookingForm';
+import BookingForm from './Components/BookingForm';
+import BookingPage from './Components/BookingPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Construction from './Components/UnderConstruction';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
           <Route path='/header' element={<Header />}></Route>
           <Route path='/main' element={<Main />}></Route>
           <Route path='/footer' element={<Footer />}></Route>
-          <Route path='/booking' element={<Booking />}></Route>
+          <Route path='/booking' element={<BookingForm />}></Route>
+          <Route path='/bookingPage' element={<BookingPage />}></Route>
+          <Route path='/construction' element={<Construction />}></Route>
         </Routes>
       </BrowserRouter>
     </>

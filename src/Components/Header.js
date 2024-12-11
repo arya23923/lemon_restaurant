@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 function Header() {
     let navigate = useNavigate();
     const routeChange = () => {
-        let path = `./booking`;
+        let path = `./bookingPage`;
         navigate(path);
     }
     return(

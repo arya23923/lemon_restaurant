@@ -1,0 +1,12 @@
+.under-construction .construction-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+.construction-center img{
+    width: 15vw;
+    padding: 2%;
+}
