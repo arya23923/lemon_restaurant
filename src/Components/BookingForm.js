@@ -20,9 +20,10 @@ const Booking = () => {
     return(
         <div className="form-reservation">
             <form>
+            <h1>Book reservation</h1>
                 <div className="spanning">
                     <label htmlFor="date">Pick a date : </label>
-                    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} required/><br />
+                    <DatePicker selected={startDate} minDate={new Date()} onChange={(date) => setStartDate(date)} required/><br />
                 </div>
                 <div className="spanning">
                     <label htmlFor="time">Select Time : </label>

@@ -30,12 +30,12 @@ main .cards .card .delivery p{
 
 main .cards .card{
     padding: 2%;
-    background-color: #f3d7d7;
+    background-color: #ebcfcf;
     justify-content: space-around;
     flex-basis: 25vw;
     padding-top: 1% ;
     padding-bottom: 1%;
-    border: 1px solid #f3d7d7;
+    border: 1px solid #ebcfcf;
     border-radius: 16px;
     box-shadow: 0px 9px rgb(191, 191, 191);
 }

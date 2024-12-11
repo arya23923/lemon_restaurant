@@ -8,6 +8,7 @@
     background-position: center;
 }
 
+
 form{
     display: flex;
     flex-direction: column;
@@ -18,7 +19,7 @@ form{
     border: 2px solid rgb(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    padding: 5%;
+    padding: 2%;
     padding-left: 0%;
     padding-right: 0%;
     width: 50vw;
@@ -30,23 +31,34 @@ form{
 }
 
 form label{
-    font-family: "Markazi Text", serif;
+    font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
     padding: 3%;
-    color: white;
+    color: black;
 }
 
 form input{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding: 3%;
-    border: 1px solid rgb(234, 234, 234);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding: 2%;
+    border: 1px solid black;
     border-radius: 8px;
     background-color: transparent;
     backdrop-filter: blur(100px);
+    align-self: flex-end;
+}
+
+form input:nth-child(1){
+    padding: 5%;
+    margin-left: 5vw;
+}
+form input:nth-child(2){
+    margin-left: 2vw;
+    padding: 2%;
+    width: 10vw;
 }
 
 form input::placeholder{
@@ -57,18 +69,22 @@ form input::placeholder{
 form select{
     padding-left: 5%;
     padding-right: 5%;
-    padding: 3%;
-    border: 1px solid rgb(251, 251, 251);
+    padding: 2%;
+    border: 1px solid black;
     border-radius: 8px;
     background-color: transparent;
     backdrop-filter: blur(100px);
+    align-self: flex-end;
+    margin-left: 5vw;
+    width: 10vw;
 }
 
 form button{
-    padding: 3%;
+    padding: 2%;
     border: 2px solid rgb(70, 70, 70);
     border-radius: 16px;
-    font-size: 15px;
+    font-size: 13px;
+    background-color: rgb(219, 198, 59);
 }
 
 form button:hover{
@@ -80,7 +96,7 @@ form button:hover{
 form .spanning{
     display: flex;
     flex-direction: row;
-    width: 30vw;
+    width: 35vw;
     justify-content: space-around;
     align-items: center;
 }

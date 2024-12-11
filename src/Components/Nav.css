@@ -32,7 +32,7 @@ nav {
     justify-content: space-around;
 }
 
-nav  .right a{
+nav .right a{
     text-decoration: none;
     color: black;
     /* text-align: center; */
@@ -43,6 +43,12 @@ nav  .right a{
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+}
+
+nav .right a:hover{
+    border-style: solid;
+    border-width: 2px 0px;
+    border-color: rgb(69, 108, 83);
 }
 
 @media screen and (max-width: 450px){
