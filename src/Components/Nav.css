@@ -53,7 +53,7 @@ nav .right a:hover{
 
 @media screen and (max-width: 450px){
     nav{
-        width: 150vw;
+        width: 100vw;
         margin-right: 0;
     }
     nav .right{
@@ -64,12 +64,14 @@ nav .right a:hover{
         font-size: 10px;
     }
     nav .left{
-        flex-basis: 10vw;
+        flex-basis: 35vw;
+        align-self: center;
     }
     nav .left img{
-        width: 40vw;
+        width: 25vw;
         height: auto;
-        padding: 0;
+        padding-top: 1.8vh;
+        padding-left: 5%;
     }
 }
 
